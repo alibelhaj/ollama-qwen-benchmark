@@ -14,3 +14,6 @@ venv/
 # Système
 .DS_Store
 Thumbs.db
+
+# Rapports de mesure (générés par llm_bench.py)
+results/
