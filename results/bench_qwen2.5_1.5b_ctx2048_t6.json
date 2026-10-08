@@ -1,0 +1,245 @@
+{
+  "summary": {
+    "model": "qwen2.5:1.5b",
+    "options": {
+      "temperature": 0.0,
+      "num_ctx": 2048,
+      "num_predict": 200,
+      "seed": 42,
+      "num_thread": 6
+    },
+    "model_loaded": {
+      "size": 1567668736,
+      "size_vram": 0,
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen2",
+        "families": [
+          "qwen2"
+        ],
+        "parameter_size": "1.5B",
+        "quantization_level": "Q4_K_M"
+      }
+    },
+    "cold_start": {
+      "wall_s": 53.752,
+      "load_s": 4.503,
+      "ttft_s": 17.506,
+      "rss_peak_mb": 1495.1,
+      "rss_mean_mb": 1406.9
+    },
+    "warm": {
+      "n_requests": 6,
+      "latency_p50_s": 17.554,
+      "latency_p95_s": 46.766,
+      "ttft_p50_s": 1.378,
+      "gen_tps_mean": 3.7,
+      "prompt_tps_mean": 119.9,
+      "throughput_req_per_min": 2.5,
+      "rss_peak_mb": 1505.3
+    },
+    "quality": {
+      "valid_json_rate": 1.0,
+      "first_try_rate": 1.0,
+      "category_accuracy": 0.5,
+      "order_id_accuracy": 1.0
+    },
+    "system": {
+      "mem_available_before_mb": 8316,
+      "mem_available_after_mb": 8364,
+      "cpu_count": 12
+    }
+  },
+  "cold": {
+    "ok": true,
+    "attempts": 1,
+    "wall_s": 53.752,
+    "ttft_s": 17.506,
+    "load_s": 4.503,
+    "prompt_tokens": 164,
+    "prompt_eval_s": 12.972,
+    "gen_tokens": 62,
+    "gen_s": 36.259,
+    "gen_tps": 1.7,
+    "prompt_tps": 12.6,
+    "output": {
+      "categorie": "technique",
+      "priorite": "haute",
+      "sentiment": "negatif",
+      "resume": "Débit d'une commande multiple et demande de remboursement",
+      "numero_commande": "CMD-4821"
+    },
+    "error": null,
+    "correct_category": false,
+    "correct_order_id": true,
+    "mem": {
+      "rss_peak_mb": 1495.1,
+      "rss_mean_mb": 1406.9
+    }
+  },
+  "warm": [
+    {
+      "ok": true,
+      "attempts": 1,
+      "wall_s": 52.941,
+      "ttft_s": 0.99,
+      "load_s": 0.045,
+      "prompt_tokens": 164,
+      "prompt_eval_s": 0.925,
+      "gen_tokens": 61,
+      "gen_s": 51.956,
+      "gen_tps": 1.2,
+      "prompt_tps": 177.2,
+      "output": {
+        "categorie": "technique",
+        "priorite": "haute",
+        "sentiment": "negatif",
+        "resume": "Débitage multiple sur commande, demande d'annulation.",
+        "numero_commande": "CMD-4821"
+      },
+      "error": null,
+      "correct_category": false,
+      "correct_order_id": true,
+      "mem": {
+        "rss_peak_mb": 1495.1,
+        "rss_mean_mb": 1495.1
+      }
+    },
+    {
+      "ok": true,
+      "attempts": 1,
+      "wall_s": 15.611,
+      "ttft_s": 2.031,
+      "load_s": 0.025,
+      "prompt_tokens": 168,
+      "prompt_eval_s": 1.988,
+      "gen_tokens": 67,
+      "gen_s": 13.584,
+      "gen_tps": 4.9,
+      "prompt_tps": 84.5,
+      "output": {
+        "categorie": "technique",
+        "priorite": "haute",
+        "sentiment": "negatif",
+        "resume": "Problème technique avec application qui bloque à chaque ouverture depuis mise à jour d'hier, impossible de travailler.",
+        "numero_commande": null
+      },
+      "error": null,
+      "correct_category": true,
+      "correct_order_id": true,
+      "mem": {
+        "rss_peak_mb": 1497.5,
+        "rss_mean_mb": 1497.1
+      }
+    },
+    {
+      "ok": true,
+      "attempts": 1,
+      "wall_s": 16.694,
+      "ttft_s": 2.619,
+      "load_s": 0.022,
+      "prompt_tokens": 165,
+      "prompt_eval_s": 2.576,
+      "gen_tokens": 61,
+      "gen_s": 14.084,
+      "gen_tps": 4.3,
+      "prompt_tps": 64.0,
+      "output": {
+        "categorie": "livraison",
+        "priorite": "haute",
+        "sentiment": "negatif",
+        "resume": "Colis non arrivé à temps avec mauvais suivi.",
+        "numero_commande": "CMD-1177"
+      },
+      "error": null,
+      "correct_category": true,
+      "correct_order_id": true,
+      "mem": {
+        "rss_peak_mb": 1498.8,
+        "rss_mean_mb": 1498.6
+      }
+    },
+    {
+      "ok": true,
+      "attempts": 1,
+      "wall_s": 11.85,
+      "ttft_s": 1.085,
+      "load_s": 0.023,
+      "prompt_tokens": 161,
+      "prompt_eval_s": 1.045,
+      "gen_tokens": 58,
+      "gen_s": 10.772,
+      "gen_tps": 5.4,
+      "prompt_tps": 154.0,
+      "output": {
+        "categorie": "technique",
+        "priorite": "haute",
+        "sentiment": "negatif",
+        "resume": "Problème de connexion impossible avec lien de réinitialisation non fonctionnant.",
+        "numero_commande": null
+      },
+      "error": null,
+      "correct_category": false,
+      "correct_order_id": true,
+      "mem": {
+        "rss_peak_mb": 1500.9,
+        "rss_mean_mb": 1500.7
+      }
+    },
+    {
+      "ok": true,
+      "attempts": 1,
+      "wall_s": 18.414,
+      "ttft_s": 1.365,
+      "load_s": 0.034,
+      "prompt_tokens": 157,
+      "prompt_eval_s": 1.309,
+      "gen_tokens": 72,
+      "gen_s": 17.056,
+      "gen_tps": 4.2,
+      "prompt_tps": 120.0,
+      "output": {
+        "categorie": "technique",
+        "priorite": "moyenne",
+        "sentiment": "positif",
+        "resume": "Service excellent et livraison rapide pour commande CMD-9003. Merci à toute l'équipe.",
+        "numero_commande": "CMD-9003"
+      },
+      "error": null,
+      "correct_category": false,
+      "correct_order_id": true,
+      "mem": {
+        "rss_peak_mb": 1502.8,
+        "rss_mean_mb": 1502.7
+      }
+    },
+    {
+      "ok": true,
+      "attempts": 1,
+      "wall_s": 28.241,
+      "ttft_s": 1.392,
+      "load_s": 0.026,
+      "prompt_tokens": 161,
+      "prompt_eval_s": 1.347,
+      "gen_tokens": 63,
+      "gen_s": 26.856,
+      "gen_tps": 2.3,
+      "prompt_tps": 119.5,
+      "output": {
+        "categorie": "facturation",
+        "priorite": "haute",
+        "sentiment": "negatif",
+        "resume": "Demande d'une facture non reçue pour une commande spécifique.",
+        "numero_commande": "CMD-3310"
+      },
+      "error": null,
+      "correct_category": true,
+      "correct_order_id": true,
+      "mem": {
+        "rss_peak_mb": 1505.3,
+        "rss_mean_mb": 1505.2
+      }
+    }
+  ]
+}
